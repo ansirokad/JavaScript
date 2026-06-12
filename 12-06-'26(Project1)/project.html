@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var RandomNumber = parseInt(Math.random() * 100);
+        console.log(RandomNumber);
+
+        var count = 0;
+
+        for (; ;) {
+            var num = prompt("Enter the Number : ");
+
+            if (num > RandomNumber) {
+                count++;
+                alert("Guess lower");
+            }
+            else if (num == RandomNumber) {
+                alert("Number are Equal");
+                alert("You guess number attempt in " + count);
+                break;
+            }
+            else {
+                count++;
+                alert("Guess Higher");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

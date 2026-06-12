@@ -29,31 +29,31 @@
 
 // console.log("== != < > <= >= === !==");
 
-// var a1 = 12;
-// var b1 = "12";
-// console.log(a1,typeof a1);
-// console.log(b1,typeof a1);
+var a1 = 12;
+var b1 = "12";
+console.log(a1,typeof a1);
+console.log(b1,typeof b1);
 
-// console.log(a1==b1);
-// console.log(a1 === b1);
-// console.log(a1 !== b1);
-
-
+console.log(a1==b1);
+console.log(a1 === b1);
+console.log(a1 !== b1);
 
 
-console.log("&& || !");
+
+
+// console.log("&& || !");
 
 // AND (&&) : return true/1 if Both Operation are true else return false/0 
 // OR (||) : return false/0 if Both Operation are false else return true/1 
 // NOT (!) : return true if Operation false else return false
 
-// console.log(12>13  && 12!=13);
-// console.log(12>13  || 12!=13);
+console.log(12>13  && 12!=13);
+console.log(12>13  || 12!=13);
 
 // console.log(!(12>13));
 
 
-// console.log(11 && 13);
+console.log(undefined && 13);
 
 // console.log(false || 0);
 
@@ -69,9 +69,8 @@ console.log("&& || !");
 
 
 
-console.log(12,typeof 12);
+// console.log(12,typeof 12);
 
-console.log(String(12),typeof String(12));
+// console.log(String(12),typeof String(12));
 
-
-document.querySelector('h1').innerHTML = typeof String(12);
+// document.querySelector('h1').innerHTML = typeof String(12);
