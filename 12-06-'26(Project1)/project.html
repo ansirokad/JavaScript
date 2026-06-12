@@ -9,29 +9,8 @@
 
 <body>
 
-    <script>
-        var RandomNumber = parseInt(Math.random() * 100);
-        console.log(RandomNumber);
-
-        var count = 0;
-
-        for (; ;) {
-            var num = prompt("Enter the Number : ");
-
-            if (num > RandomNumber) {
-                count++;
-                alert("Guess Lower Number");
-            }
-            else if (num == RandomNumber) {
-                alert("Number are Equal");
-                alert("Guess number attempt in " + count);
-                break;
-            }
-            else {
-                count++;
-                alert("Guess Higher Number");
-            }
-        }
+    <script src="project1.js">
+        
     </script>
 
 </body>
