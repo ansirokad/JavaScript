@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>5. **Array Reversal:** <br>
+   - Create an array `original` with values `[1, 2, 3, 4, 5]`. Use `pop` and `unshift` to reverse the elements in place (without creating a new array).</p>
+
+    <script>
+        // 5. Array Reversal : 
+
+        var original = [1, 2, 3, 4, 5];
+        console.log("Before Reversal : ", original);
+
+        for (let i = original.length - 1 ; i >= 0; i--) {
+            console.log(original[original.unshift()-1] );
+            original.pop();
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>
+        7. **Array Length Changes:** <br>
+        - Create an array `fruits` with values `['apple', 'orange', 'banana']`. <br>
+        - Use `push` to add `'grape'` to the end of the array. <br>
+        - Use `pop` to remove `'grape'` from the array. <br>
+        - Use `unshift` to add `'pear'` to the beginning of the array. <br>
+        - Use `shift` to remove `'pear'` from the array.</p>
+
+    <script>
+        // 7. Array Length Changes
+
+        var fruits = ['apple', 'orange', 'banana'];
+        console.log("Total Length : ", fruits.length);
+        console.log("\n");
+
+
+        fruits.push('grape');
+        console.log(fruits);
+        console.log("Use Push : ", fruits.length);
+        console.log("\n");
+
+        fruits.pop('grape');
+        console.log(fruits);
+        console.log("Use Pop : ", fruits.length);
+        console.log("\n");
+
+        fruits.unshift('pear');
+        console.log(fruits);
+        console.log("Use Unshift :", fruits.length);
+        console.log("\n");
+
+        fruits.shift();
+        console.log(fruits);
+        console.log("Use Shift :", fruits.length);
+
+    </script>
+
+</body>
+
+</html>
