@@ -18,3 +18,47 @@ var age = 15;
 
 console.log("Youe Name is ", fname, ". Your Age is ", age, ".");
 console.log("Youe Name is ", fname, ". Your Age is ", age, ".");
+
+
+/* String Formating : */
+
+console.log(`Your Name is ${fname}. Your Age is ${age}.`);
+// console.log('Your Name is ${fname}. Your Age is ${age}.'); // wrong
+// console.log("Your Name is ${fname}. Your Age is ${age}."); // wrong
+
+console.log(`This is
+     New Line.`);
+/*
+console.log("This is
+     New Line.");       // wrong
+console.log('This is
+     New Line.');       // wrong
+*/        
+
+console.log("\n");
+
+
+var para = "This is Paragraph.";
+console.log(para);
+
+// 1. Property : Length 
+console.log("Length : ",para.length);
+
+
+// 2. Method :
+
+// toUpperCase
+console.log(para.toUpperCase());
+
+// toLowerCase
+console.log(para.toLowerCase());
+
+// Include
+console.log(para.includes("This"));
+
+// Spilt
+console.log(para.split()); // sentence
+console.log(para.split("")); // Single letter
+console.log(para.split(" ")); // Single Word
+
+
