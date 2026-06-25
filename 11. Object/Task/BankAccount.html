@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Task 4: Bank Account</h2>
+
+    <p>Create an object named `account` with:</p>
+
+    <ul>
+        <li> accountNumber</li>
+        <li>holderName </li>
+        <li>balance</li>
+    </ul>
+
+    **Requirements:** <br>
+
+    1. Display account details. <br>
+    2. Deposit ₹5000 into the balance. <br>
+    3. Add a property `accountType`. <br>
+    4. Delete the `accountType` property. <br>
+    5. Create a method `checkBalance()` that displays the current balance.
+
+    <script>
+
+        var account = {
+            accountNumber : 465458451467,
+            holderName: "Rinal",
+            balance: 60000,
+            checkBalance() {
+                console.log("current balance : ",this.balance);
+            }
+        };
+
+        // Display account details.
+        console.log(account);
+
+        // Deposit ₹5000 into the balance.
+        account.balance += 5000;
+        console.log(account);
+
+        // Add a property `accountType`.
+        account.accountType = `Fixed Deposit Account`;
+        console.log(account);
+
+        // Delete the `accountType` property.
+        delete account.accountType;
+        console.log(account);
+
+        // Create a method `showDetails()` to display employee information.
+        account.checkBalance();
+
+
+    </script>
+</body>
+
+</html>

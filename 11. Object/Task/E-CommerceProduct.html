@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Task 2: E-Commerce Product</h2>
+
+    <p>Create an object named `product` with:</p>
+
+    <ul>
+        <li> productId</li>
+        <li>productName </li>
+        <li>price</li>
+        <li>stock</li>
+    </ul>
+
+    **Requirements:** <br>
+
+    1. Display product details. <br>
+    2. Change the price. <br>
+    3. Add a property `category`. <br>
+    4. Remove the `stock` property. <br>
+    5. Create a method `productInfo()` that displays all product information.
+
+
+    <script>
+
+        var product = {
+            productId: 10,
+            productName: "Laptop",
+            price: 50000,
+            stock: 30,
+            productInfo: function () {
+                console.log(`productId : ${this.productId}, productName : ${this.productName}, price : ${this.price}, stock : ${this.stock}, category:  ${this.category}`)
+            }
+        };
+
+        // Display product details.
+        console.log(product);
+
+        // Change the price.
+        product.price = 45000;
+        console.log(product);
+
+        // Add a property `category`.
+        product.category = 'Electronics';
+        console.log(product);
+
+
+        // Remove the `stock` property. 
+        delete product.stock;
+        console.log(product);
+
+        // Create a method `productInfo()` that displays all product information.
+        product.productInfo();
+
+    </script>
+
+
+</body>
+
+</html>

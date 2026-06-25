@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Task 3: Employee Management</h2>
+
+    <p>Create an object named `employee` with:</p>
+
+    <ul>
+        <li> empId</li>
+        <li>empName </li>
+        <li>department</li>
+        <li>salary</li>
+    </ul>
+
+    **Requirements:** <br>
+
+    1. Display employee details. <br>
+    2. Increase salary by 10%. <br>
+    3. Add a property `experience`. <br>
+    4. Delete the `department` property. <br>
+    5. Create a method `showDetails()` to display employee information.
+    <script>
+
+        var employee = {
+            empId: 11,
+            empName: "Krishna",
+            department: "Marketing",
+            salary: 80000,
+            showDetails : function(){
+                console.log(`empId : ${this.empId}, empName : ${this.empName}, department : ${this.department}, salary : ${this.salary}`);
+            }
+            
+        };
+
+        // Display employee details.
+        console.log(employee);
+
+        // Increase salary by 10%.
+        employee.salary = employee.salary + (employee.salary*0.10);
+        console.log(employee);
+
+        // Add a property `experience`.
+        employee.experience = 4;
+        console.log(employee);
+
+        // Delete the `department` property.
+        delete employee.department;
+        console.log(employee);
+
+        // Create a method `showDetails()` to display employee information.
+        employee.showDetails();
+
+    </script>
+
+
+</body>
+
+</html>

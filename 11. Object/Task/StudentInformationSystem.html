@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Task 1: Student Information System</h2>
+
+    <p>Create an object named `student` with the following properties: </p>
+
+    <ul>
+        <li>rollNo</li>
+        <li>name </li>
+        <li>course</li>
+        <li>marks</li>
+    </ul>
+
+    **Requirements:** <br>
+
+    1. Display all student details. <br>
+    2. Update the marks. <br>
+    3. Add a new property `grade`. <br>
+    4. Delete the `course` property.
+
+
+    <script>
+
+        var student = {
+            rollNo: 1,
+            name: "shree",
+            course: "Web Development",
+            marks: 45
+        };
+        // Display all student details.
+        console.log(student);
+
+        // Update the marks.
+        student.marks = 41;
+        console.log(student);
+
+        // Add a new property `grade`.
+        student.grade = `B+`;
+        console.log(student);
+
+        // Delete the `course` property. 
+        delete student.course;
+        console.log(student);
+
+    </script>
+
+</body>
+
+</html>

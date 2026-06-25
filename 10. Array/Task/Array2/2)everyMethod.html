@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>2. every() Method :</h2>
+    <p> Question: You have an array of numbers: <br>
+        - let numbers = [2, 4, 6, 8, 10]; <br>
+        - Write a function to check if all elements in the array are even numbers using the every() method. <br>
+        - Expected Output: true (since all numbers are even)</p>
+
+
+    <script>
+        // 2. every() Method :
+        let numbers = [2, 4, 6, 8, 10];
+
+        let output = numbers.every((element) => {
+            return element % 2 == 0;
+        });
+
+        console.log(`${output} (since all numbers are even)`);
+    </script>
+
+</body>
+
+</html>

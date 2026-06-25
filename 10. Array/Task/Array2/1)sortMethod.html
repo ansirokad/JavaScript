@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> 1. sort() Method :</h2>
+    <p> Question: You have an array of numbers: <br>
+        - let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]; <br>
+        - Write a function that sorts the array in ascending order without modifying the original array. <br>
+        - Expected Output: The sorted array: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]</p>
+
+    <script>
+        // 1. sort() Method :
+        let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+        console.log("original array : ", numbers);
+
+        numbers.sort((a,b)=>{
+            return a-b;
+        });
+        console.log("The sorted array : ",numbers);
+
+    </script>
+
+</body>
+
+</html>

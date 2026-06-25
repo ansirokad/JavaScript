@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Task 5: Movie Booking System</h2>
+
+    <p>Create an object named `movie` with:</p>
+
+    <ul>
+        <li> movieName</li>
+        <li>ticketPrice </li>
+        <li>availableSeats</li>
+        <li>theatreName</li>
+    </ul>
+
+    **Requirements:** <br>
+
+    1. Display movie details. <br>
+    2. Update the ticket price. <br>
+    3. Add a property `showTime`. <br>
+    4. Delete the `theatreName` property. <br>
+    5. Create a method `movieInfo()` that displays complete movie information.
+
+    <script>
+
+        var movie = {
+            movieName: "Krishnavataram",
+            ticketPrice: 300,
+            availableSeats: 80,
+            theatreName: "INOX Cinemas",
+            movieInfo : function() {
+               console.log(`movieName : ${this.movieName}, ticketPrice : ${this.ticketPrice}, availableSeats : ${this.availableSeats}, theatreName : ${this.theatreName}`);
+            }
+        };
+
+        // Display movie details.
+        console.log(movie);
+
+        // Update the ticket price.
+        movie.ticketPrice = 350 ;
+        console.log(movie);
+
+        // Add a property `showTime`.
+        movie.showTime = `4:00 PM`;
+        console.log(movie);
+
+        // Delete the `theatreName` property.
+        delete movie.theatreName;
+        console.log(movie);
+
+        // Create a method `movieInfo()` that displays complete movie information.
+        movie.movieInfo();
+
+    </script>
+</body>
+
+</html>

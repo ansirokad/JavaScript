@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>3. some() Method :</h2>
+    <p> Question: You have an array of numbers: <br>
+        - let numbers = [1, 3, 5, 7, 8, 9]; <br>
+        - Write a function to check if there is at least one even number in the array using the some() method. <br>
+        - Expected Output: true (since 8 is an even number)</p>
+
+
+    <script>
+        // 3. some() Method :
+        let numbers = [1, 3, 5, 7, 8, 9];
+
+        let output = numbers.some((element) => {
+            return element % 2 == 0;
+        });
+
+        console.log(`${output} (since 8 is an even number)`);
+    </script>
+
+</body>
+
+</html>
