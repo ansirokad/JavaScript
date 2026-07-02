@@ -1,0 +1,36 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 50px;
+     height: 100vh;
+     background-color: rgb(84, 83, 83);
+ }
+
+ div {
+     background-color: black;
+     color: rgb(84, 83, 83);
+     font-size: 24px;
+     font-family: verdana;
+     padding: 30px;
+ }
+
+ section {
+     display: flex;
+     font-size: 36px;
+     gap: 50px;
+ }
+
+ main {
+     display: flex;
+     gap: 20px;
+     background-color: darkslategray;
+     padding: 20px;
+ }
